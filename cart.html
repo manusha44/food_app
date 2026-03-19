@@ -1,0 +1,9 @@
+<h2>Your Cart</h2>
+
+{% for item in cart %}
+<p>{{item[0]}} - ₹{{item[1]}}</p>
+{% endfor %}
+
+<h3>Total: ₹{{total}}</h3>
+
+<a href="/place">Place Order</a>
